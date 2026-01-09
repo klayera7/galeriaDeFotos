@@ -1,41 +1,16 @@
-# 📸 Galeria de Fotos - Pexels API
+DOCUMENTAÇÃO DO PROJETO: GALERIA DE FOTOS (PEXELS API)
+---------------------------------------------------------
+Este arquivo contém o código-fonte completo para a aplicação de Galeria de Fotos, desenvolvida como parte de um desafio técnico Front-end. O projeto consiste em uma interface responsiva que consome a API da Pexels para buscar e exibir imagens de alta qualidade em tempo real.
 
-Projeto desenvolvido como parte de um desafio técnico Front-end. Trata-se de uma aplicação web responsiva que consome a API da Pexels para exibir fotos de alta qualidade, com funcionalidade de pesquisa dinâmica e interface em tema escuro (Dark Mode).
+RESUMO TÉCNICO:
+1. Estrutura (HTML): Desenvolvida com semântica rigorosa (tags main, article, header) para garantir acessibilidade e SEO. Inclui feedback visual de carregamento (loader) e tratamento para estados vazios.
 
-## 🚀 Funcionalidades
+2. Estilização (CSS): Implementa um tema escuro (Dark Mode) com paleta de cores em tons de roxo, utilizando Variáveis CSS (:root) para fácil manutenção. O layout é responsivo via CSS Grid e Flexbox, adaptando-se a qualquer tamanho de tela.
 
-- **Busca Dinâmica:** Pesquise por qualquer termo (ex: "Tecnologia", "Natureza") e receba fotos atualizadas instantaneamente.
-- **Consumo de API:** Integração assíncrona com a Pexels API utilizando `fetch` e `async/await`.
-- **Interface Responsiva:** Layout que se adapta a desktops, tablets e smartphones (Grid Layout).
-- **Feedback Visual:** Indicador de carregamento (Spinner) enquanto as requisições são processadas.
-- **Tratamento de Erros:** Mensagens amigáveis caso a busca não retorne resultados ou a API falhe.
-- **Semântica HTML:** Estrutura de código acessível e organizada.
+3. Lógica (JavaScript):
+   - Arquitetura: Código modularizado (ES Modules) separando a lógica da API (initApiKey) da execução principal.
+   - Assincronismo: Utiliza async/await e Fetch API para chamadas de rede eficientes.
+   - Funcionalidades: Busca dinâmica por termos, carregamento inicial de fotos "curated" e tratamento de erros (try/catch) para falhas de rede ou busca sem resultados.
 
-## 🛠️ Tecnologias Utilizadas
-
-- **HTML5:** Estruturação semântica (`<main>`, `<article>`, etc).
-- **CSS3:**
-  - Variáveis CSS (`:root`) para paleta de cores.
-  - Flexbox e CSS Grid para layout.
-  - Tema Escuro com tons de Roxo.
-- **JavaScript (ES6+):**
-  - ES Modules (`import`/`export`) para organização do código.
-  - Manipulação do DOM.
-  - Consumo de API REST.
-- **Ferramentas Externas:**
-  - [Pexels API](https://www.pexels.com/api/) (Fonte das imagens).
-  - [Font Awesome](https://fontawesome.com/) (Ícones).
-
-## 📂 Estrutura do Projeto
-
-```text
-/
-├── index.html          # Estrutura principal
-├── README.md           # Documentação
-└── src/
-    ├── CSS/
-    │   └── style.css   # Estilização global
-    └── JS/
-        ├── script.js   # Ponto de entrada do JavaScript
-        └── modules/
-            └── APY_KEY.js # Lógica de conexão com a API
+INSTRUÇÕES PARA EXECUÇÃO:
+Como o projeto utiliza Módulos ES, este código deve ser separado em seus respectivos arquivos (index.html, style.css, script.js e APY_KEY.js) e executado através de um servidor local (como o Live Server do VS Code) para evitar bloqueios de CORS. A chave da API já está configurada para testes.
