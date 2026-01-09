@@ -26,38 +26,6 @@ Projeto desenvolvido como parte de um desafio técnico Front-end. Trata-se de um
   - [Pexels API](https://www.pexels.com/api/) (Fonte das imagens).
   - [Font Awesome](https://fontawesome.com/) (Ícones).
 
-  ## 📦 Como rodar o projeto localmente
-
-> ⚠️ **Atenção:** Como este projeto utiliza **ES Modules** (JavaScript Modular), ele precisa ser executado através de um servidor local (HTTP Server). Abrir o arquivo `index.html` diretamente pelo gerenciador de arquivos **não funcionará** devido às políticas de segurança CORS dos navegadores.
-
-### Pré-requisitos
-
-* Um editor de código (recomendado: **VS Code**).
-* Navegador moderno (Chrome, Firefox, Edge).
-
-### Passo a Passo
-
-1.  **Clone este repositório** (ou baixe os arquivos):
-    ```bash
-    git clone [https://github.com/klayera7/galeriaDeFotos.git](https://github.com/klayera7/galeriaDeFotos.git)
-    ```
-
-2.  **Abra a pasta no VS Code.**
-
-3.  **Instale a extensão "Live Server"** (Recomendado):
-    * No VS Code, vá em **Extensões** (`Ctrl+Shift+X`).
-    * Procure por **"Live Server"** (por Ritwick Dey).
-    * Clique em **instalar**.
-
-4.  **Execute o projeto:**
-    * Abra o arquivo `index.html`.
-    * Clique com o botão direito em qualquer lugar do código.
-    * Selecione **"Open with Live Server"**.
-    * O navegador abrirá automaticamente com o projeto rodando.
-
----
-Desenvolvido por [Alex Garcia](https://github.com/klayera7)
-
 ## 📂 Estrutura do Projeto
 
 ```text
@@ -71,4 +39,3 @@ Desenvolvido por [Alex Garcia](https://github.com/klayera7)
         ├── script.js   # Ponto de entrada do JavaScript
         └── modules/
             └── APY_KEY.js # Lógica de conexão com a API
-

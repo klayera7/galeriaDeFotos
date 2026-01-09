@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="/src/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Galeria de Fotos</h1>
+    </header>
+
+    <main>
+        <section id="search-container">
+            <input type="text" id="search-input" placeholder="Pesquisar fotos...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </section>
+
+        <div id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Carregando fotos...</p>
+        </div>
+
+        <section id="gallery">
+            <article class="photo-item">
+                <div class="img-wrapper">
+                    <img src="https://via.placeholder.com/300" alt="Exemplo de Foto">
+                </div>
+                <h2>Nome da Foto 1</h2>
+            </article>
+            <article class="photo-item">
+                <div class="img-wrapper">
+                    <img src="https://via.placeholder.com/300" alt="Exemplo de Foto">
+                </div>
+                <h2>Nome da Foto 2</h2>
+            </article>
+            <article class="photo-item">
+                <div class="img-wrapper">
+                    <img src="https://via.placeholder.com/300" alt="Exemplo de Foto">
+                </div>
+                <h2>Nome da Foto 3</h2>
+            </article>
+             <article class="photo-item">
+                <div class="img-wrapper">
+                    <img src="https://via.placeholder.com/300" alt="Exemplo de Foto">
+                </div>
+                <h2>Nome da Foto 4</h2>
+            </article>
+        </section>
+        
+        <p id="no-results" style="display: none; text-align: center;">Nenhuma foto encontrada</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Galeria de Fotos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="module" src="src/JS/script.js"></script>
+</body>
+</html>
